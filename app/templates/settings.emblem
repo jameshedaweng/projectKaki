@@ -1,0 +1,3 @@
+header
+  h1 Settings
+tab-bar currentPage="settings"

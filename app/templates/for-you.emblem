@@ -1,0 +1,52 @@
+header
+  div class="subtitle" {{date-today}}
+  h1 For you
+section
+  div class="section-title section-title-large" Today's workout
+  div class="workout-link workout-link-large" style="background-image:url('/images/outdoor-walk.jpg')"
+    div class="workout-link-title-wrapper" 
+      div class="workout-link-title" Outdoor Walking
+      div class="workout-link-subtitle" Enjoy the nice weather and have a walk!
+section class="scroller-section"
+  div class="section-title" Wanna do it again?
+  div class="workouts-scroller"
+    div class="workout-link-wrapper"
+      div class="workout-link-count" 19 Workouts
+      div class="workout-link workout-link-small" style="background-image:url('/images/indoor-run.png')"
+        div class="workout-link-title-wrapper" 
+          div class="workout-link-title" Indoor Running
+    div class="workout-link-wrapper"
+      div class="workout-link-count" 12 Workouts
+      div class="workout-link workout-link-small" style="background-image:url('/images/outdoor-run.jpg')"
+        div class="workout-link-title-wrapper" 
+          div class="workout-link-title" Outdoor Running
+    div class="workout-link-wrapper"
+      div class="workout-link-count" 8 Workouts
+      div class="workout-link workout-link-small" style="background-image:url('/images/elliptical.jpg')"
+        div class="workout-link-title-wrapper" 
+          div class="workout-link-title" Elliptical
+    div class="workout-link-wrapper"
+      div class="workout-link-count" 6 Workouts
+      div class="workout-link workout-link-small" style="background-image:url('/images/indoor-walk.jpg')"
+        div class="workout-link-title-wrapper" 
+          div class="workout-link-title" Indoor Walking
+section class="scroller-section"
+  div class="section-title" Browse by category
+  div class="workouts-scroller"
+    div class="workout-link-wrapper"
+      div class="workout-link workout-link-category category-red"
+        i class="bi_medicine-heart"
+        span Running
+    div class="workout-link-wrapper"
+      div class="workout-link workout-link-category category-orange"
+        i class="bi_transport-bicycle"
+        span Cycling
+    div class="workout-link-wrapper"
+      div class="workout-link workout-link-category category-green"
+        i class="bi_interface-direction"
+        span Walking
+    div class="workout-link-wrapper"
+      div class="workout-link workout-link-category category-purple"
+        i class="bi_sport-dumbell-a"
+        span Gym
+tab-bar currentPage="for-you"

@@ -1,0 +1,17 @@
+div class="tab-bar {{currentPage}}"
+  = link-to "for-you" class="tab-bar-button" id="for-you-button"
+    i class="bi_doc-book-mark"
+    br
+    span class="tab-bar-title" For You
+  = link-to "calendar" class="tab-bar-button" id="calendar-button"
+    i class="bi_time-calendar-a"
+    br
+    span class="tab-bar-title" Calendar
+  = link-to "achievements" class="tab-bar-button" id="achievements-button"
+    i class="bi_sport-trophy-a"
+    br
+    span class="tab-bar-title" Achievements
+  = link-to "settings" class="tab-bar-button" id="settings-button"
+    i class="bi_setting-gear-a"
+    br
+    span class="tab-bar-title" Settings
