@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('settings');
   this.route('workout', {path: 'workout/:id'});
   this.route('workout-category', {path: 'category/:id'});
+  this.route('achievement', {path: 'achievement/:id'});
 });
 
 export default Router;

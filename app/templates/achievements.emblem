@@ -2,3 +2,15 @@ header
   h1 Achievements
   div class="divider"
 tab-bar currentPage="achievements"
+section
+  div class="section-title" This week
+  each model.achievements.thisWeek as |content index|
+    achievement-badge content=content
+section
+  div class="section-title" This Month
+  each model.achievements.thisMonth as |content index|
+    achievement-badge content=content
+section
+  div class="section-title" History
+  each model.achievements.history as |content index|
+    achievement-badge content=content

@@ -1,6 +1,8 @@
 import Ember from 'ember';
+import ResetScrollMixin from 'ember-cli-reset-scroll';
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(ResetScrollMixin, {
+  resetScroll: undefined,
   model(params){
     return {
       color: "red",

@@ -1,0 +1,23 @@
+fixed-top-bar backLink="achievements" backTitle="Achievements"
+div class="large-badge-container"
+  img src="{{model.image}}"
+section class="achievement-section"
+  div class="divider"
+  div class="section-title" {{model.title}}
+  div class="section-message" {{model.message}}
+  div class="divider"
+  div class="section-description"
+    if model.earned
+      div class="description-success"
+        | Congratulations!
+        br
+        | With your hard work, you have this badge.
+    else
+      div class="description-failed"
+        | Currently you don't have this badge.
+        br 
+        | Finish more workouts to get it!
+    if model.count
+      | You have earned this achievement {{model.count}} times.
+      br
+      | Latest: {{model.last_earned}}

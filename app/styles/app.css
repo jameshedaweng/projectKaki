@@ -3620,10 +3620,57 @@ body {
     border-top: 1px solid #CCCCCC;
     margin-top: 180px;
     background-color: #FAFAFA; }
+  body .large-badge-container {
+    padding: 20px; }
+    body .large-badge-container img {
+      width: 100%; }
   body section {
     padding: 15px 0px 15px 0px; }
     body section.scroller-section {
       padding-right: 0px; }
+    body section.achievement-section .divider {
+      margin-left: 20px;
+      border-bottom: 1px solid #CCCCCC;
+      margin-bottom: 15px; }
+    body section.achievement-section .section-message {
+      text-transform: uppercase;
+      color: #777777;
+      font-size: 14px;
+      line-height: 24px;
+      padding: 0px 20px;
+      margin-bottom: 15px; }
+    body section.achievement-section .section-description {
+      padding: 0px 20px;
+      color: #777777;
+      text-align: center; }
+      body section.achievement-section .section-description .description-success, body section.achievement-section .section-description .description-failed {
+        text-align: left;
+        margin: 10px 0px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 15px;
+        margin-bottom: 20px; }
+      body section.achievement-section .section-description .description-success {
+        border: 2px solid #2ECC71;
+        color: #2ECC71; }
+      body section.achievement-section .section-description .description-failed {
+        border: 2px solid #E74C3C;
+        color: #E74C3C; }
+    body section .badge-wrapper {
+      display: inline-block;
+      width: 33.33%;
+      padding: 0px 15px;
+      vertical-align: top;
+      text-align: center; }
+      body section .badge-wrapper img {
+        width: 100%; }
+      body section .badge-wrapper .badge-title {
+        font-weight: 500;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333333; }
     body section .section-title {
       font-weight: 700;
       text-transform: uppercase;
@@ -3722,7 +3769,7 @@ body {
       display: inline-block;
       width: 25%;
       text-align: center;
-      padding: 5px 0px;
+      padding: 6px 0px 4px 0px;
       color: #777777; }
       body .tab-bar a.tab-bar-button i {
         font-size: 20px;
