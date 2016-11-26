@@ -6,7 +6,7 @@ export default Ember.Route.extend(ResetScrollMixin, {
   model(params) {
     return {
       title: "Outdoor Walking",
-      image: "/images/outdoor-walk.jpg",
+      image: "https://s3-us-west-2.amazonaws.com/codenamekaki/outdoor-walk.jpg",
       count: 18
     };
   }

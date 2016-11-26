@@ -13,9 +13,11 @@ a{
 body{
   padding-bottom: 50px;
   min-height: 100%;
+  -webkit-overflow-scrolling: touch;
   .header-photo-container{
     height: 240px;
     width: 100%;
+    background-color: $bgDarkGray;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,8 +60,8 @@ body{
   .top-bar{
     position: fixed;
     width: 100%;
-    height: 49px;
-    padding: 10px;
+    height: 69px;
+    padding: 30px 10px 10px 10px;
     left: 0;
     top: 0;
     @include transition-fast();
@@ -117,6 +119,9 @@ body{
       border-top: 1px solid $lineGray;
       margin-top: 240px;
     }
+    &:not(.photo-header){
+      margin-top: 20px;
+    }
   }
   .container-with-header{
     border-top: 1px solid $lineGray;
@@ -124,7 +129,9 @@ body{
     background-color: $bgGray;
   }
   .large-badge-container{
+    margin-top: 50px;
     padding: 20px;
+    height: calc(100vw + 20px);
     img{
       width: 100%;
     }
@@ -177,8 +184,11 @@ body{
       padding: 0px 15px;
       vertical-align: top;
       text-align: center;
-      img{
-        width: 100%;
+      .small-badge-wrapper{
+        height: calc(33vw - 30px);
+        img{
+          width: 100%;
+        }
       }
       .badge-title{
         font-weight: 500;
@@ -199,6 +209,63 @@ body{
         color: $themeColor;
         margin-bottom: 10px;
       }
+      select{
+        border: none;
+        background: none;
+        -webkit-appearance: none;
+        &:focus{
+          outline: none;
+        }
+      }
+      .caret{
+        margin-left: 10px;
+      }
+    }
+    .workout-factor{
+      width: 100%;
+      padding: 15px;
+      border-radius: 15px;
+      border: 2px solid $lineGray;
+      background: $bgGray;
+      &:not(.current){
+        display: none;
+      }
+      .slider-minus, .slider-plus{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: $textWhite;
+        background: $themeColor;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50px;
+        vertical-align: middle;
+      }
+      .slider-minus{
+        font-size: 20px;
+      }
+      .slider-plus{
+        font-size: 30px;
+      }
+      .workout-factor-wrapper{
+        width: calc(100% - 140px);
+        text-align: center;
+        display: inline-block;
+        margin: 0px 20px;
+        vertical-align: middle;
+        .main{
+          font-size: 48px;
+        }
+        .subtitle{
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        &.full-width{
+          width: 100%;
+          margin: 0px;
+        }
+      }
     }
     .workout-link-intro{
       padding: 0px 20px;
@@ -208,6 +275,7 @@ body{
       line-height: 28px;
     }
     .workout-link{
+      background-color: $bgDarkGray;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -336,6 +404,20 @@ body{
     &.settings{
       #settings-button{
         color: $themeColor;
+      }
+    }
+    &.primary-button-wrapper{
+      padding: 0px;
+      .primary-button{
+        width: 100%;
+        height: 100%;
+        background: $themeColor;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $textWhite;
+        line-height: 49px;
+        font-weight: 700;
+        text-align: center;
       }
     }
   }

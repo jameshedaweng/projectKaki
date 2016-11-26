@@ -1,3 +1,4 @@
 =link-to "achievement" content.id
-  img src="{{content.image}}"
+  div class="small-badge-wrapper"
+    img src="{{content.image}}"
   div class="badge-title" {{content.title}}

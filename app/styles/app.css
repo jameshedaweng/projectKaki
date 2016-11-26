@@ -3514,7 +3514,7 @@
 /* '' */
 @font-face {
   font-family: 'budicon';
-  src: url("/fonts/budicon.ttf") format("truetype");
+  src: url("https://s3-us-west-2.amazonaws.com/codenamekaki/budicon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 html, body {
@@ -3527,10 +3527,12 @@ a:link, a:hover, a:active, a:visited {
 
 body {
   padding-bottom: 50px;
-  min-height: 100%; }
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch; }
   body .header-photo-container {
     height: 240px;
     width: 100%;
+    background-color: #999999;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3565,8 +3567,8 @@ body {
   body .top-bar {
     position: fixed;
     width: 100%;
-    height: 49px;
-    padding: 10px;
+    height: 69px;
+    padding: 30px 10px 10px 10px;
     left: 0;
     top: 0;
     -webkit-transition: .2s ease-in-out;
@@ -3616,12 +3618,16 @@ body {
     body header.photo-header {
       border-top: 1px solid #CCCCCC;
       margin-top: 240px; }
+    body header:not(.photo-header) {
+      margin-top: 20px; }
   body .container-with-header {
     border-top: 1px solid #CCCCCC;
     margin-top: 180px;
     background-color: #FAFAFA; }
   body .large-badge-container {
-    padding: 20px; }
+    margin-top: 50px;
+    padding: 20px;
+    height: calc(100vw + 20px); }
     body .large-badge-container img {
       width: 100%; }
   body section {
@@ -3663,8 +3669,10 @@ body {
       padding: 0px 15px;
       vertical-align: top;
       text-align: center; }
-      body section .badge-wrapper img {
-        width: 100%; }
+      body section .badge-wrapper .small-badge-wrapper {
+        height: calc(33vw - 30px); }
+        body section .badge-wrapper .small-badge-wrapper img {
+          width: 100%; }
       body section .badge-wrapper .badge-title {
         font-weight: 500;
         font-size: 14px;
@@ -3681,6 +3689,51 @@ body {
         font-size: 24px;
         color: #3498DB;
         margin-bottom: 10px; }
+      body section .section-title select {
+        border: none;
+        background: none;
+        -webkit-appearance: none; }
+        body section .section-title select:focus {
+          outline: none; }
+      body section .section-title .caret {
+        margin-left: 10px; }
+    body section .workout-factor {
+      width: 100%;
+      padding: 15px;
+      border-radius: 15px;
+      border: 2px solid #CCCCCC;
+      background: #FAFAFA; }
+      body section .workout-factor:not(.current) {
+        display: none; }
+      body section .workout-factor .slider-minus, body section .workout-factor .slider-plus {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        color: #FFFFFF;
+        background: #3498DB;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50px;
+        vertical-align: middle; }
+      body section .workout-factor .slider-minus {
+        font-size: 20px; }
+      body section .workout-factor .slider-plus {
+        font-size: 30px; }
+      body section .workout-factor .workout-factor-wrapper {
+        width: calc(100% - 140px);
+        text-align: center;
+        display: inline-block;
+        margin: 0px 20px;
+        vertical-align: middle; }
+        body section .workout-factor .workout-factor-wrapper .main {
+          font-size: 48px; }
+        body section .workout-factor .workout-factor-wrapper .subtitle {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 700; }
+        body section .workout-factor .workout-factor-wrapper.full-width {
+          width: 100%;
+          margin: 0px; }
     body section .workout-link-intro {
       padding: 0px 20px;
       color: #999999;
@@ -3688,6 +3741,7 @@ body {
       font-size: 16px;
       line-height: 28px; }
     body section .workout-link {
+      background-color: #999999;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -3785,5 +3839,17 @@ body {
       color: #3498DB; }
     body .tab-bar.settings #settings-button {
       color: #3498DB; }
+    body .tab-bar.primary-button-wrapper {
+      padding: 0px; }
+      body .tab-bar.primary-button-wrapper .primary-button {
+        width: 100%;
+        height: 100%;
+        background: #3498DB;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 49px;
+        font-weight: 700;
+        text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

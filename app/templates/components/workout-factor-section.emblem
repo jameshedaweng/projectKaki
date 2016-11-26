@@ -1,0 +1,34 @@
+div class="section-title section-title-large"
+  select id="workout-factor-select"
+    option value="1" CALORIES
+    option value="2" DISTANCE
+    option value="3" ELAPSE TIME
+    option value="4" OPEN GOAL
+  span class="caret"
+div class="content-main"
+  div class="workout-factor current" id="workout-factor-1"
+    span class="slider-minus" ─
+    div class="workout-factor-wrapper"
+      span class="main" 300
+      br
+      span class="subtitle" Cal
+    span class="slider-plus" +
+  div class="workout-factor" id="workout-factor-2"
+    span class="slider-minus" ─
+    div class="workout-factor-wrapper"
+      span class="main" 5
+      br
+      span class="subtitle" KM
+    span class="slider-plus" +
+  div class="workout-factor" id="workout-factor-3"
+    span class="slider-minus" ─
+    div class="workout-factor-wrapper"
+      span class="main" 30
+      br
+      span class="subtitle" Minutes
+    span class="slider-plus" +
+  div class="workout-factor" id="workout-factor-4"
+    div class="workout-factor-wrapper full-width"
+      span class="main" Open Goal
+      br
+      span class="subtitle" No Specifications
