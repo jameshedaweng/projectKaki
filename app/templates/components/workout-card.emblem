@@ -1,0 +1,6 @@
+div class="workout-link-intro" You've done this workout {{content.count}} times.
+=link-to "workout" content.id
+  div class="workout-link workout-link-large" style="background-image:url('{{content.image}}')"
+    div class="workout-link-title-wrapper" 
+      div class="workout-link-title" {{content.title}}
+      div class="workout-link-subtitle" {{content.message}}

@@ -11,6 +11,8 @@ Router.map(function() {
   this.route('achievements');
   this.route('calendar');
   this.route('settings');
+  this.route('workout', {path: 'workout/:id'});
+  this.route('workout-category', {path: 'category/:id'});
 });
 
 export default Router;

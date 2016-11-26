@@ -1,0 +1,8 @@
+div class="header-color-container {{content.color}}"
+  div class="header-color-title"
+    i class="{{content.icon}}"
+    span {{content.title}}
+top-bar backLink="for-you" backTitle="For You"
+div class="container-with-header"
+  each model.workouts as |content index|
+    workout-card content=content

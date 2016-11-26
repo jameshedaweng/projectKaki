@@ -1,0 +1,5 @@
+div class="workout-link-count" {{content.count}} Workouts
+=link-to "workout" content.id
+  div class="workout-link workout-link-small" style="background-image:url('{{content.image}}')"
+    div class="workout-link-title-wrapper" 
+      div class="workout-link-title" {{content.title}}

@@ -1,3 +1,4 @@
 header
   h1 Settings
+  div class="divider"
 tab-bar currentPage="settings"

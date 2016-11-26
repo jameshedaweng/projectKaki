@@ -3522,36 +3522,124 @@ html, body {
   background-color: #FAFAFA;
   color: #333333; }
 
+a:link, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
 body {
-  padding: 20px 0px 70px 20px;
+  padding-bottom: 50px;
   min-height: 100%; }
+  body .header-photo-container {
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  body .header-color-container {
+    height: 180px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+    body .header-color-container .header-color-title {
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 48px;
+      line-height: 60px;
+      margin-top: 70px;
+      padding-right: 10px; }
+      body .header-color-container .header-color-title i {
+        margin-right: 10px; }
+    body .header-color-container.red {
+      background: -webkit-linear-gradient(#E74C3C, #C0392B); }
+    body .header-color-container.orange {
+      background: -webkit-linear-gradient(#F39C12, #E67E22); }
+    body .header-color-container.green {
+      background: -webkit-linear-gradient(#2ECC71, #1ABC9C); }
+    body .header-color-container.purple {
+      background: -webkit-linear-gradient(#9B59B6, #8E44AD); }
+  body .top-bar {
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    body .top-bar .back-link {
+      font-size: 16px;
+      line-height: 29px;
+      font-weight: 600; }
+    body .top-bar.transparent {
+      background-color: transparent;
+      -webkit-backdrop-filter: blur(0px);
+      border-bottom: none; }
+      body .top-bar.transparent .back-link {
+        color: #FFFFFF;
+        text-shadow: 0px 0px 10px #000000; }
+    body .top-bar:not(.transparent) {
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid #CCCCCC; }
+      body .top-bar:not(.transparent) .back-link {
+        color: #3498DB;
+        text-shadow: none; }
   body header {
-    padding: 0px 20px 15px 0px;
-    border-bottom: 1px solid #CCCCCC; }
+    padding: 20px 0px 0px 20px; }
     body header h1 {
       margin: 0px;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 40px; }
+    body header h2 {
+      margin: 0px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 32px; }
     body header .subtitle {
       text-transform: uppercase;
       color: #999999;
       font-size: 16px;
       line-height: 28px;
       padding-left: 2px; }
+    body header .divider {
+      margin-top: 15px;
+      border-bottom: 1px solid #CCCCCC;
+      width: 100%; }
+    body header.photo-header {
+      border-top: 1px solid #CCCCCC;
+      margin-top: 240px; }
+  body .container-with-header {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 180px;
+    background-color: #FAFAFA; }
   body section {
-    padding: 15px 20px 15px 0px; }
+    padding: 15px 0px 15px 0px; }
     body section.scroller-section {
       padding-right: 0px; }
     body section .section-title {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 20px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      padding: 0px 20px; }
       body section .section-title.section-title-large {
         font-size: 24px;
         color: #3498DB;
         margin-bottom: 10px; }
+    body section .workout-link-intro {
+      padding: 0px 20px;
+      color: #999999;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px; }
     body section .workout-link {
       background-size: cover;
       background-position: center;
@@ -3580,7 +3668,8 @@ body {
           font-weight: 500; }
       body section .workout-link.workout-link-large {
         height: 240px;
-        width: 100%; }
+        margin-left: 20px;
+        margin-right: 20px; }
       body section .workout-link.workout-link-small {
         height: 180px;
         width: 300px; }
@@ -3591,7 +3680,7 @@ body {
         padding: 15px 20px;
         font-size: 28px;
         color: #FFFFFF;
-        margin-top: 10px; }
+        margin-top: 5px; }
         body section .workout-link.workout-link-category i {
           font-size: 24px;
           margin-right: 10px; }
@@ -3607,7 +3696,8 @@ body {
       overflow-y: hidden;
       overflow-x: scroll;
       white-space: nowrap;
-      -webkit-overflow-scrolling: touch; }
+      -webkit-overflow-scrolling: touch;
+      padding: 0px 0px 0px 20px; }
       body section .workouts-scroller .workout-link-wrapper {
         display: inline-block;
         margin-right: 20px; }
@@ -3616,6 +3706,8 @@ body {
           font-weight: 500;
           font-size: 16px;
           line-height: 28px; }
+    body section .content-main {
+      padding: 0px 20px 20px 20px; }
   body .tab-bar {
     position: fixed;
     width: 100%;
@@ -3638,8 +3730,6 @@ body {
       body .tab-bar a.tab-bar-button .tab-bar-title {
         font-size: 12px;
         line-height: 15px; }
-      body .tab-bar a.tab-bar-button:link, body .tab-bar a.tab-bar-button:hover, body .tab-bar a.tab-bar-button:active, body .tab-bar a.tab-bar-button:visited {
-        text-decoration: none; }
     body .tab-bar.for-you #for-you-button {
       color: #3498DB; }
     body .tab-bar.calendar #calendar-button {

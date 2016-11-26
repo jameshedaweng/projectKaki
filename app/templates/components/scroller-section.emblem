@@ -1,0 +1,4 @@
+section class="scroller-section"
+  div class="section-title" {{title}}
+  div class="workouts-scroller"
+    = yield

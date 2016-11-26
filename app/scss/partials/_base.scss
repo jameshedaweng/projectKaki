@@ -3,17 +3,103 @@ html, body{
   background-color: $bgGray;
   color: $textDarkGray;
 }
+
+a{
+  &:link, &:hover, &:active, &:visited{
+    text-decoration: none;
+  }
+}
+
 body{
-  padding: 20px 0px 70px 20px;
+  padding-bottom: 50px;
   min-height: 100%;
+  .header-photo-container{
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .header-color-container{
+    height: 180px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    .header-color-title{
+      color: $textWhite;
+      text-align: center;
+      font-size: 48px;
+      line-height: 60px;
+      margin-top: 70px;
+      padding-right: 10px;
+      i{
+        margin-right: 10px;
+      }
+    }
+    &.red{
+      background: -webkit-linear-gradient($tintRed, $tintRedDark);
+    }
+    &.orange{
+      background: -webkit-linear-gradient($tintOrange, $tintOrangeDark);
+    }
+    &.green{
+      background: -webkit-linear-gradient($tintGreen, $tintGreenDark);
+    }
+    &.purple{
+      background: -webkit-linear-gradient($tintPurple, $tintPurpleDark);
+    }
+  }
+  .top-bar{
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    @include transition-fast();
+    .back-link{
+      font-size: 16px;
+      line-height: 29px;
+      font-weight: 600;
+    }
+    &.transparent{
+      background-color: transparent;
+      -webkit-backdrop-filter: blur(0px);
+      border-bottom: none;
+      .back-link{
+        color: $textWhite;
+        text-shadow: 0px 0px 10px $shadowBlack;
+      }
+    }
+    &:not(.transparent){
+      background-color: rgba($bgWhite, 0.9);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid $lineGray;
+      .back-link{
+        color: $themeColor;
+        text-shadow: none;
+      }
+    }
+  }
   header{
-    padding: 0px 20px 15px 0px;
-    border-bottom: 1px solid $lineGray;
+    padding: 20px 0px 0px 20px;
     h1{
       margin: 0px;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 40px;
+    }
+    h2{
+      margin: 0px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 32px;
     }
     .subtitle{
       text-transform: uppercase;
@@ -22,9 +108,23 @@ body{
       line-height: 28px;
       padding-left: 2px;
     }
+    .divider{
+      margin-top: 15px;
+      border-bottom: 1px solid $lineGray;
+      width: 100%;
+    }
+    &.photo-header{
+      border-top: 1px solid $lineGray;
+      margin-top: 240px;
+    }
+  }
+  .container-with-header{
+    border-top: 1px solid $lineGray;
+    margin-top: 180px;
+    background-color: $bgGray;
   }
   section{
-    padding: 15px 20px 15px 0px;
+    padding: 15px 0px 15px 0px;
     &.scroller-section{
       padding-right: 0px;
     }
@@ -33,11 +133,19 @@ body{
       text-transform: uppercase;
       font-size: 20px;
       margin-bottom: 5px;
+      padding: 0px 20px;
       &.section-title-large{
         font-size: 24px;
         color: $themeColor;
         margin-bottom: 10px;
       }
+    }
+    .workout-link-intro{
+      padding: 0px 20px;
+      color: $textLightGray;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
     }
     .workout-link{
       background-size: cover;
@@ -70,7 +178,8 @@ body{
       }
       &.workout-link-large{
         height: 240px;
-        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       &.workout-link-small{
         height: 180px;
@@ -84,7 +193,7 @@ body{
         padding: 15px 20px;
         font-size: 28px;
         color: $textWhite;
-        margin-top: 10px;
+        margin-top: 5px;
         i{
           font-size: 24px;
           margin-right: 10px;
@@ -108,6 +217,7 @@ body{
       overflow-x: scroll;
       white-space: nowrap;
       -webkit-overflow-scrolling: touch;
+      padding: 0px 0px 0px 20px;
       .workout-link-wrapper{
         display: inline-block;
         margin-right: 20px;
@@ -118,6 +228,9 @@ body{
           line-height: 28px;
         }
       }
+    }
+    .content-main{
+      padding: 0px 20px 20px 20px;
     }
   }
   .tab-bar{
@@ -143,9 +256,6 @@ body{
       .tab-bar-title{
         font-size: 12px;
         line-height: 15px;
-      }
-      &:link, &:hover, &:active, &:visited{
-        text-decoration: none;
       }
     }
     &.for-you{

@@ -1,0 +1,4 @@
+=link-to "workout-category" content.category_id
+  div class="workout-link workout-link-category category-{{content.color}}"
+    i class="{{content.icon}}"
+    span {{content.title}}

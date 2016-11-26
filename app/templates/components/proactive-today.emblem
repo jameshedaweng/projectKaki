@@ -1,0 +1,6 @@
+div class="section-title section-title-large" Today's workout
+=link-to "workout" content.id
+  div class="workout-link workout-link-large" style="background-image:url('{{content.image}}')"
+    div class="workout-link-title-wrapper" 
+      div class="workout-link-title" {{content.title}}
+      div class="workout-link-subtitle" {{content.message}}
