@@ -1,5 +1,6 @@
 header
   h1 Achievements
+  div class="subtitle" Your ranking in Santander: 258
   div class="divider"
 tab-bar currentPage="achievements"
 section
