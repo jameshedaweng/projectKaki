@@ -210,6 +210,7 @@ body{
         margin-bottom: 10px;
       }
       select{
+        padding: 0px;
         border: none;
         background: none;
         -webkit-appearance: none;
@@ -360,6 +361,120 @@ body{
     .content-main{
       padding: 0px 20px 20px 20px;
     }
+    .list{
+      margin-left: 20px;
+      list-style-type: none;
+      border-top: 1px solid $lineGray;
+      padding-left: 0px;
+      li{
+        height: 50px;
+        padding: 0px 20px 0px 0px;
+        border-bottom: 1px solid $lineGray;
+        .title{
+          display: inline-block;
+          width: 100px;
+          font-size: 18px;
+          line-height: 50px;
+          font-weight: 700;
+        }
+        .control{
+          display: inline-block;
+          width: 160px;
+          float: right;
+          font-size: 18px;
+          line-height: 50px;
+        }
+        input, select{
+          background: none;
+          border: none; 
+          padding: 0px;
+          -webkit-appearance: none;
+          font-size: 18px;
+          line-height: 50px;
+          color: $textMiddleGray;
+          width: 80px;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+    .calendar{
+      margin-left: 20px;
+      padding-right: 20px;
+      width: calc(100% - 20px);
+      border-top: 1px solid $lineGray;
+      border-bottom: 1px solid $lineGray;
+      font-size: 16px;
+      .calendar-inner{
+        width: 100%;
+        th{
+          width: calc(100% / 7);
+          height: 50px;
+          text-align: center;
+          color: $textMiddleGray;
+        }
+        td{
+          width: calc(100% / 7);
+          height: 50px;
+          text-align: center;
+          border: 2px solid $bgGray;
+          span{
+            display: inline-block;
+          }
+          &.cal-high{
+            box-shadow: inset 0px -50px 0px $themeColor;
+            color: $textWhite;
+          }
+          &.cal-mid{
+            box-shadow: inset 0px -30px 0px $themeColor;
+            color: $textWhite;
+          }
+          &.cal-low{
+            box-shadow: inset 0px -10px 0px $themeColor;
+          }
+          &.future{
+            color: $textMiddleGray;
+          }
+          &.today{
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .allergy-card{
+    margin: 0px 20px 15px 20px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: $themeColor;
+    border: 2px solid $themeColor;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .new-allergy-button{
+    margin: 0px 20px 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $textMiddleGray;
+    text-align: center;
+  }
+  textarea{
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    border: none;
+    border-bottom: 2px solid $lineGray;
+    background: none;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 0px;
+    padding: 0px;
+    &:focus{
+      outline: none;
+    }
   }
   .tab-bar{
     position: fixed;
@@ -419,6 +534,67 @@ body{
         font-weight: 700;
         text-align: center;
       }
+    }
+  }
+}
+
+
+.dashboard{
+  margin: 20px;
+  background: -webkit-linear-gradient($tintGreen, $tintGreenDark);
+  padding: 5px 15px 10px 15px;
+  border-radius: 15px;
+  &.dashboard-orange{
+    background: -webkit-linear-gradient($tintOrange, $tintOrangeDark);
+  }
+  .dashboard-header{
+    border-bottom: 1px solid $textWhite;
+    color: $textWhite;
+    padding-bottom: 15px;
+    .dashboard-title{
+      display: inline-block;
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: 700;
+    }
+    .dashboard-today{
+      display: inline-block;
+      float: right;
+      text-align: right;
+      .subtitle{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px;
+      }
+      .main{
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+  .dashboard-main{
+    float: none !important;
+    width: 344px;
+    height: 150px;
+  }
+}
+
+
+.dc-chart{
+  .axis{
+    .tick{
+      line{
+        display: none;
+        stroke: $textWhite;
+      }
+      text{
+        font-family: 'Avenir Next', sans-serif;
+        fill: $textWhite;
+        font-size: 10px;
+      }
+    }
+    .domain{
+      stroke: $textWhite;
     }
   }
 }

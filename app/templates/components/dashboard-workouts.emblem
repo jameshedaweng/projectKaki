@@ -1,0 +1,7 @@
+div class="dashboard-header"
+  div class="dashboard-title" Workouts
+  div class="dashboard-today"
+    span class="subtitle" Today
+    br
+    span class="main" 3 Workouts
+div class="dashboard-main" id="dashboard-workouts"

@@ -1,4 +1,14 @@
 header
-  h1 Calendar
+  h1 Dashboard
   div class="divider"
 tab-bar currentPage="calendar"
+section
+  div class="section-title section-title-large"
+    select id="workout-factor-select"
+      option value="11" NOVEMBER 2016
+      option value="10" OCTOBER 2016
+      option value="9" SEPTEMBER 2016
+    span class="caret"
+  calendar-main
+  dashboard-cal
+  dashboard-workouts

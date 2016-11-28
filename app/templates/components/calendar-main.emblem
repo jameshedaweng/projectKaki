@@ -1,0 +1,83 @@
+table class="calendar-inner"
+  tr
+    th M
+    th T
+    th W
+    th T
+    th F
+    th S
+    th S
+  tr
+    td &nbsp;
+    td class="cal-low"
+      span 1
+    td class="cal-low"
+      span 2
+    td class="cal-mid"
+      span 3
+    td class="workout-high cal-mid"
+      span 4
+    td class="workout-high cal-high"
+      span 5
+    td class="cal-mid"
+      span 6
+  tr
+    td class="cal-low"
+      span 7
+    td class="workout-high cal-mid"
+      span 8
+    td class="workout-high cal-high"
+      span 9
+    td
+      span 10
+    td class="cal-mid"
+      span 11
+    td class="workout-high cal-mid"
+      span 12
+    td class="cal-low"
+      span 13
+  tr
+    td
+      span 14
+    td class="cal-low"
+      span 15
+    td
+      span 16
+    td
+      span 17
+    td class="workout-high cal-mid"
+      span 18
+    td class="cal-low"
+      span 19
+    td class="workout-high cal-high"
+      span 20
+  tr
+    td
+      span 21
+    td class="cal-mid"
+      span 22
+    td
+      span 23
+    td class="workout-high cal-mid"
+      span 24
+    td class="cal-low"
+      span 25
+    td class="workout-high cal-high today selected"
+      span 26
+    td class="future"
+      span 27
+  tr
+    td class="future"
+      span 28
+    td class="future"
+      span 29
+    td class="future"
+      span 30
+    td
+      span &nbsp;
+    td
+      span &nbsp;
+    td
+      span &nbsp;
+    td
+      span &nbsp;

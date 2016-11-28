@@ -1,0 +1,7 @@
+div class="dashboard-header"
+  div class="dashboard-title" Calories
+  div class="dashboard-today"
+    span class="subtitle" Today
+    br
+    span class="main" 325.2 cal
+div class="dashboard-main" id="dashboard-cal"

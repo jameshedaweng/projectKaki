@@ -3690,6 +3690,7 @@ body {
         color: #3498DB;
         margin-bottom: 10px; }
       body section .section-title select {
+        padding: 0px;
         border: none;
         background: none;
         -webkit-appearance: none; }
@@ -3809,6 +3810,100 @@ body {
           line-height: 28px; }
     body section .content-main {
       padding: 0px 20px 20px 20px; }
+    body section .list {
+      margin-left: 20px;
+      list-style-type: none;
+      border-top: 1px solid #CCCCCC;
+      padding-left: 0px; }
+      body section .list li {
+        height: 50px;
+        padding: 0px 20px 0px 0px;
+        border-bottom: 1px solid #CCCCCC; }
+        body section .list li .title {
+          display: inline-block;
+          width: 100px;
+          font-size: 18px;
+          line-height: 50px;
+          font-weight: 700; }
+        body section .list li .control {
+          display: inline-block;
+          width: 160px;
+          float: right;
+          font-size: 18px;
+          line-height: 50px; }
+        body section .list li input, body section .list li select {
+          background: none;
+          border: none;
+          padding: 0px;
+          -webkit-appearance: none;
+          font-size: 18px;
+          line-height: 50px;
+          color: #777777;
+          width: 80px; }
+          body section .list li input:focus, body section .list li select:focus {
+            outline: none; }
+    body section .calendar {
+      margin-left: 20px;
+      padding-right: 20px;
+      width: calc(100% - 20px);
+      border-top: 1px solid #CCCCCC;
+      border-bottom: 1px solid #CCCCCC;
+      font-size: 16px; }
+      body section .calendar .calendar-inner {
+        width: 100%; }
+        body section .calendar .calendar-inner th {
+          width: calc(100% / 7);
+          height: 50px;
+          text-align: center;
+          color: #777777; }
+        body section .calendar .calendar-inner td {
+          width: calc(100% / 7);
+          height: 50px;
+          text-align: center;
+          border: 2px solid #FAFAFA; }
+          body section .calendar .calendar-inner td span {
+            display: inline-block; }
+          body section .calendar .calendar-inner td.cal-high {
+            box-shadow: inset 0px -50px 0px #3498DB;
+            color: #FFFFFF; }
+          body section .calendar .calendar-inner td.cal-mid {
+            box-shadow: inset 0px -30px 0px #3498DB;
+            color: #FFFFFF; }
+          body section .calendar .calendar-inner td.cal-low {
+            box-shadow: inset 0px -10px 0px #3498DB; }
+          body section .calendar .calendar-inner td.future {
+            color: #777777; }
+          body section .calendar .calendar-inner td.today {
+            font-weight: 700; }
+  body .allergy-card {
+    margin: 0px 20px 15px 20px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: #3498DB;
+    border: 2px solid #3498DB;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  body .new-allergy-button {
+    margin: 0px 20px 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #777777;
+    text-align: center; }
+  body textarea {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    background: none;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 0px;
+    padding: 0px; }
+    body textarea:focus {
+      outline: none; }
   body .tab-bar {
     position: fixed;
     width: 100%;
@@ -3851,5 +3946,47 @@ body {
         line-height: 49px;
         font-weight: 700;
         text-align: center; }
+
+.dashboard {
+  margin: 20px;
+  background: -webkit-linear-gradient(#2ECC71, #1ABC9C);
+  padding: 5px 15px 10px 15px;
+  border-radius: 15px; }
+  .dashboard.dashboard-orange {
+    background: -webkit-linear-gradient(#F39C12, #E67E22); }
+  .dashboard .dashboard-header {
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding-bottom: 15px; }
+    .dashboard .dashboard-header .dashboard-title {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: 700; }
+    .dashboard .dashboard-header .dashboard-today {
+      display: inline-block;
+      float: right;
+      text-align: right; }
+      .dashboard .dashboard-header .dashboard-today .subtitle {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px; }
+      .dashboard .dashboard-header .dashboard-today .main {
+        font-size: 20px;
+        line-height: 24px; }
+  .dashboard .dashboard-main {
+    float: none !important;
+    width: 344px;
+    height: 150px; }
+
+.dc-chart .axis .tick line {
+  display: none;
+  stroke: #FFFFFF; }
+.dc-chart .axis .tick text {
+  font-family: 'Avenir Next', sans-serif;
+  fill: #FFFFFF;
+  font-size: 10px; }
+.dc-chart .axis .domain {
+  stroke: #FFFFFF; }
 
 /*# sourceMappingURL=app.css.map */

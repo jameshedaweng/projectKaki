@@ -2,3 +2,32 @@ header
   h1 Settings
   div class="divider"
 tab-bar currentPage="settings"
+section class="list-view-section"
+  div class="section-title section-title-large" Basic Info
+  ul class="list"
+    li
+      div class="title" Age
+      input type="tel" class="control" value="28"
+    li
+      div class="title" Weight
+      div class="control"
+        input type="tel" value="52"
+        span kg
+    li
+      div class="title" Height
+      div class="control"
+        input type="tel" value="179"
+        span cm
+    li
+      div class="title" Gender
+      select class="control"
+        option value="male" Male
+        option value="female" Female
+section class="list-view-section"
+  div class="section-title section-title-large" Observations
+  textarea rows="3" Broken knee for 2 months; Diabete
+section class="list-view-section"
+  div class="section-title section-title-large" Allergies
+  div class="allergy-card" Polen
+  div class="new-allergy-button" + Add New Allergy
+
